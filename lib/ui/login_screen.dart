@@ -1,3 +1,4 @@
+import 'package:banco_douro/ui/styles/colors.dart';
 import 'package:flutter/material.dart';
 
 class LoginScreen extends StatelessWidget {
@@ -40,10 +41,12 @@ class LoginScreen extends StatelessWidget {
                     ),
                     SizedBox(height: 32),
                     ElevatedButton(
-                      onPressed: () {},
+                      onPressed: () {
+                        Navigator.pushReplacementNamed(context, "home");
+                      },
                       style: ButtonStyle(
                         backgroundColor: WidgetStatePropertyAll(
-                          Color(0xFFFFA902),
+                          AppColor.orange,
                         ),
                       ),
                       child: const Text(
