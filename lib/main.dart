@@ -16,7 +16,7 @@ class BancoDouroApp extends StatelessWidget {
       home: LoginScreen(),
       routes: {
         "login": (context) => LoginScreen(),
-        "home": (context) => const HomeScreen(),
+        "home": (context) => HomeScreen(),
       },
       initialRoute: "login",
     );
